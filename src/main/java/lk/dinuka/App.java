@@ -16,8 +16,13 @@ public class App {
         System.out.println(numOne + " * " + numTwo + " = " + result);
     }
     public static void divide(int numOne, int numTwo) {
-        int result = numOne / numTwo;
-        System.out.println(numOne + " / " + numTwo + " = " + result);
+        if(numTwo == 0){
+                System.out.println("Number two cannot be zero");
+        }else{
+                int result = numOne / numTwo;
+                System.out.println(numOne + " / " + numTwo + " = " + result);
+        }
+
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
